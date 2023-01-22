@@ -1,24 +1,30 @@
-import { Container } from "../Container/Container.styled";
-import { ContainerLogo, ImgLogo, List, Title } from "./Header.styled";
+import {
+  ContainerHeader,
+  ContainerLogo,
+  ImgLogo,
+  Link,
+  List,
+  NameFirst,
+  NameSecond,
+} from "./Header.styled";
 import Logo from "../../images/logo.svg";
 
 export const Header = () => {
   return (
-    <Container>
+    <ContainerHeader>
       <ContainerLogo>
-        <Title href="">
-          <ImgLogo src={Logo} alt="logo" />
-          <h1>Finance Ledger</h1>
-        </Title>
+        <ImgLogo src={Logo} alt="logo" />
+        <NameFirst>Finance</NameFirst>
+        <NameSecond>Ledger</NameSecond>
       </ContainerLogo>
 
       <List>
-        <li>Home</li>
-        <li>About</li>
-        <li>Cases</li>
-        <li>Blog</li>
-        <li>Contact</li>
+        <Link>Home</Link>
+        <Link>About</Link>
+        <Link>Cases</Link>
+        <Link>Blog</Link>
+        <Link>Contact</Link>
       </List>
-    </Container>
+    </ContainerHeader>
   );
 };
