@@ -9,7 +9,7 @@ export const TextContainer = styled.div`
   margin-bottom: 56px;
 `;
 
-export const AboutImg = styled.img`
+export const AboutImg = styled.div`
   display: flex;
   margin: 0 auto;
   padding-bottom: 79px;
@@ -37,7 +37,7 @@ export const AboutTitle = styled.h2`
 `;
 
 export const AboutButton = styled.button`
-  background-color: var(--accent-color);
+  background-color: transparent;
   border-radius: 5px;
   border: 1px solid var(--first-color);
   color: var(--first-color);

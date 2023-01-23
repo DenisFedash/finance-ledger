@@ -31,3 +31,13 @@ export const CasesTitle = styled.h2`
   display: block;
   margin: 0 auto;
 `;
+
+export const Image = styled.li`
+  overflow: hidden;
+  :not(:last-child) {
+    margin-bottom: 8px;
+  }
+  :last-child {
+    padding-bottom: 40px;
+  }
+`;

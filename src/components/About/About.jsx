@@ -1,7 +1,8 @@
 import { Container } from "../Container/Container.styled";
-import About1x from "../../images/about/about-mobile.webp";
-import About2x from "../../images/about/about-mobile@2x.webp";
-import About3x from "../../images/about/about-mobile@3x.webp";
+import peopleJpg from "../../images/home/people.jpg";
+import peopleWebp from "../../images/home/people.webp";
+import people2xJpg from "../../images/home/people@2x.jpg";
+import people2xWebp from "../../images/home/people@2x.webp";
 import {
   AboutButton,
   AboutContainer,
@@ -10,17 +11,20 @@ import {
   AboutTitle,
   TextContainer,
 } from "./About.styled";
+import { Picture } from "../../utils/Picture/Picture";
 
 export const About = () => {
   return (
     <Container>
       <AboutContainer>
-        <AboutImg
-          type="image/webp"
-          src={About1x}
-          srcSet={`${About1x} 1x, ${About2x} 2x, ${About3x} 3x`}
-          media="(max-width: 767px)"
-        />
+        <AboutImg>
+          <Picture
+            jpg1x={peopleJpg}
+            jpg2x={people2xJpg}
+            webp1x={peopleWebp}
+            webp2x={people2xWebp}
+          />
+        </AboutImg>
         <TextContainer>
           <AboutText>What you are looking for</AboutText>
           <AboutTitle>We provide bespoke solutions</AboutTitle>

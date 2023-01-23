@@ -4,6 +4,7 @@
   --first-color: #FFFFFF;
   --second-color: #333333;
   --accent-color: #28A745;
+  --second-accent-color: #0284D0;
 }
 
 
@@ -16,7 +17,13 @@ p {
   margin: 0;
 }
 
+img{
+  display: block;
+  height: auto;
+}
+
 ul,
+a,
 li {
   list-style: none;
   padding: 0;
