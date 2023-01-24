@@ -46,7 +46,7 @@ export const Cases = () => {
         </CasesText>
         <ul>
           <Image>
-            <a href={cases1Jpg2x} data-lightbox="cases">
+            <a href={cases1Jpg2x} data-lightbox="roadtrip">
               <Picture
                 jpg1x={cases1Jpg}
                 jpg2x={cases1Webp}
@@ -56,7 +56,7 @@ export const Cases = () => {
             </a>
           </Image>
           <Image>
-            <a href={cases1Jpg2x} data-lightbox="cases">
+            <a href={cases2Jpg2x} data-lightbox="roadtrip">
               <Picture
                 jpg1x={cases2Jpg}
                 jpg2x={cases2Webp}
@@ -66,7 +66,7 @@ export const Cases = () => {
             </a>
           </Image>
           <Image>
-            <a href={cases1Jpg2x} data-lightbox="cases">
+            <a href={cases3Jpg2x} data-lightbox="croadtrip">
               <Picture
                 jpg1x={cases3Jpg}
                 jpg2x={cases3Webp}
@@ -76,7 +76,7 @@ export const Cases = () => {
             </a>
           </Image>
           <Image>
-            <a href={cases1Jpg2x} data-lightbox="cases">
+            <a href={cases4Jpg2x} data-lightbox="roadtrip">
               <Picture
                 jpg1x={cases4Jpg}
                 jpg2x={cases4Webp}
@@ -86,7 +86,7 @@ export const Cases = () => {
             </a>
           </Image>
           <Image>
-            <a href={cases1Jpg2x} data-lightbox="cases">
+            <a href={cases5Jpg2x} data-lightbox="roadtrip">
               <Picture
                 jpg1x={cases5Jpg}
                 jpg2x={cases5Webp}
@@ -96,7 +96,7 @@ export const Cases = () => {
             </a>
           </Image>
           <Image>
-            <a href={cases1Jpg2x} data-lightbox="cases">
+            <a href={cases6Jpg2x} data-lightbox="roadtrip">
               <Picture
                 jpg1x={cases6Jpg}
                 jpg2x={cases6Webp}
@@ -106,7 +106,7 @@ export const Cases = () => {
             </a>
           </Image>
           <Image>
-            <a href={cases1Jpg2x} data-lightbox="cases">
+            <a href={cases7Jpg2x} data-lightbox="roadtrip">
               <Picture
                 jpg1x={cases7Jpg}
                 jpg2x={cases7Webp}
@@ -116,7 +116,7 @@ export const Cases = () => {
             </a>
           </Image>
           <Image>
-            <a href={cases1Jpg2x} data-lightbox="cases">
+            <a href={cases8Jpg2x} data-lightbox="roadtrip">
               <Picture
                 jpg1x={cases8Jpg}
                 jpg2x={cases8Webp}

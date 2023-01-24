@@ -25,7 +25,6 @@ export const NameFirst = styled.span`
 
 export const NameSecond = styled.span`
   color: var(--first-color);
-
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 28px;
