@@ -6,7 +6,6 @@ export const AboutContainer = styled.div`
 
 export const TextContainer = styled.div`
   padding: 0 20px 79px 20px;
-  margin-bottom: 56px;
 `;
 
 export const AboutImg = styled.div`
@@ -43,4 +42,13 @@ export const AboutButton = styled.button`
   color: var(--first-color);
 
   padding: 16px 32px;
+
+  cursor: pointer;
+  transition: all 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: var(--first-color);
+    color: var(--accent-color);
+  }
 `;

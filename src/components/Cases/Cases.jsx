@@ -37,7 +37,7 @@ import { Picture } from "../../utils/Picture/Picture";
 export const Cases = () => {
   return (
     <Container>
-      <CasesContainer>
+      <CasesContainer id="cases">
         <CasesText>This is what we do</CasesText>
         <CasesTitle>Business Cases</CasesTitle>
         <CasesText>

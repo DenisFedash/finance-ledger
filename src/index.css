@@ -5,10 +5,28 @@
   --second-color: #333333;
   --accent-color: #28A745;
   --second-accent-color: #0284D0;
+  --third-accnt-color: #F5F5F5;
+  --fourth-accent-color: #808080;
+  --primary-background-color:#FFFFFF;
+  --secondary-background-color:#F4F4F4;
 }
 
 
-body,
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
 h1,
 h2,
 h3,

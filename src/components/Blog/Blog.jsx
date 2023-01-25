@@ -4,15 +4,19 @@ import blogWebp from "../../images/home/blog.webp";
 import blog2xJpg from "../../images/home/blog@2x.jpg";
 import blog2xWebp from "../../images/home/blog@2x.webp";
 
-import { AboutButton, AboutText, AboutTitle } from "../About/About.styled";
-import { BlogContainer, BlogImage, BlogTextContainer } from "./Blog.styled";
+import { AboutText, AboutTitle } from "../About/About.styled";
+import {
+  BlogButton,
+  BlogContainer,
+  BlogImage,
+  BlogTextContainer,
+} from "./Blog.styled";
 import { Picture } from "../../utils/Picture/Picture";
 
 export const Blog = () => {
   return (
     <Container>
-      {/* <img src={blog} alt="blog" width={320} /> */}
-      <BlogContainer>
+      <BlogContainer id="blog">
         <BlogImage>
           <Picture
             jpg1x={blogJpg}
@@ -30,7 +34,7 @@ export const Blog = () => {
             harum illum dolore explicabo ab dolores itaque rerum temporibus
             doloribus iste maiores deleniti?
           </AboutText>
-          <AboutButton type="button">Read Our Blog</AboutButton>
+          <BlogButton type="button">Read Our Blog</BlogButton>
         </BlogTextContainer>
       </BlogContainer>
     </Container>

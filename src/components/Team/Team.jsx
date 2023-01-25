@@ -11,15 +11,18 @@ import person3Webp from "../../images/team/person3.webp";
 import person3Jpg2x from "../../images/team/person3@2x.jpg";
 import person3Webp2x from "../../images/team/person3@2x.webp";
 import { Picture } from "../../utils/Picture/Picture";
+import { Socials } from "../../utils/Socials/Socials";
 import { Container } from "../Container/Container.styled";
 import {
   TeamContainer,
   TeamImg,
   TeamItem,
+  TeamListSocial,
   TeamName,
   TeamPosition,
   TeamText,
   TeamTitle,
+  TeamWrapper,
 } from "./Team.styled";
 
 export const Team = () => {
@@ -35,12 +38,16 @@ export const Team = () => {
         <ul>
           <TeamItem>
             <TeamImg>
+              <TeamListSocial>
+                <Socials />
+              </TeamListSocial>
               <Picture
                 jpg1x={person1Jpg}
                 jpg2x={person1Webp}
                 webp1x={person1Jpg2x}
                 webp2x={person1Webp2x}
               />
+              <TeamWrapper />
             </TeamImg>
 
             <TeamName>John Doe</TeamName>
@@ -48,12 +55,16 @@ export const Team = () => {
           </TeamItem>
           <TeamItem>
             <TeamImg>
+              <TeamListSocial>
+                <Socials />
+              </TeamListSocial>
               <Picture
                 jpg1x={person2Jpg}
                 jpg2x={person2Webp}
                 webp1x={person2Jpg2x}
                 webp2x={person2Webp2x}
               />
+              <TeamWrapper />
             </TeamImg>
 
             <TeamName>Jane Doe</TeamName>
@@ -61,12 +72,16 @@ export const Team = () => {
           </TeamItem>
           <TeamItem>
             <TeamImg>
+              <TeamListSocial>
+                <Socials />
+              </TeamListSocial>
               <Picture
                 jpg1x={person3Jpg}
                 jpg2x={person3Webp}
                 webp1x={person3Jpg2x}
                 webp2x={person3Webp2x}
               />
+              <TeamWrapper />
             </TeamImg>
 
             <TeamName>Steve Smith</TeamName>

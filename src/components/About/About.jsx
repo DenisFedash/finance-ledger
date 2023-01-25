@@ -16,7 +16,7 @@ import { Picture } from "../../utils/Picture/Picture";
 export const About = () => {
   return (
     <Container>
-      <AboutContainer>
+      <AboutContainer id="about">
         <AboutImg>
           <Picture
             jpg1x={peopleJpg}

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  padding: 0 20px;
+  padding: 50px 20px 0 20px;
+  background: var(--secondary-background-color);
 `;
 
 export const ContactImg = styled.div`

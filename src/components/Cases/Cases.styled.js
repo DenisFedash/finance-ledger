@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const CasesContainer = styled.div`
-  padding: 0 20px;
+  padding: 56px 20px 0 20px;
+  background: var(--secondary-background-color);
 `;
 
 export const CasesText = styled.p`
@@ -39,5 +40,12 @@ export const Image = styled.li`
   }
   :last-child {
     padding-bottom: 40px;
+  }
+
+  transition: opacity 200ms;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    cursor: pointer;
   }
 `;

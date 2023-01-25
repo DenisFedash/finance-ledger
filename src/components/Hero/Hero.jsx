@@ -1,5 +1,5 @@
 import { Container } from "../Container/Container.styled";
-import { Header } from "../Header/Header";
+
 import {
   AngleRight,
   ContainerHero,
@@ -14,8 +14,6 @@ export const Hero = () => {
   return (
     <Container>
       <ContainerHero>
-        <Header />
-
         <SectionHero>
           <HeroTitle>The Sky Is The Limit</HeroTitle>
           <HeroText>We provide world class financial assistance</HeroText>

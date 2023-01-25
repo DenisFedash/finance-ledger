@@ -3,8 +3,8 @@ import * as yup from "yup";
 import { FormContainer, FormField, Label } from "./FormSubmit.styled";
 
 const schema = yup.object().shape({
-  name: yup.string().required(),
-  email: yup.string().email().required(),
+  name: yup.string().required("This is a required field"),
+  email: yup.string().email().required("This is a required field"),
 });
 
 const initialValues = {
@@ -25,13 +25,21 @@ export const FormSubmit = () => {
     >
       <FormContainer>
         <div>
-          <Label htmlFor="name">
-            <FormField type="text" name="name" placeholder="Enter your name" />
-            <ErrorMessage name="name" component="div" />
+          <Label>
+            <label htmlFor="name">
+              <FormField
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+              />
+              <ErrorMessage name="name" component="div" />
+            </label>
           </Label>
-          <Label htmlFor="email">
-            <FormField type="text" name="Email" placeholder="Enter email*" />
-            <ErrorMessage name="email" component="div" />
+          <Label>
+            <label htmlFor="email">
+              <FormField type="text" name="Email" placeholder="Enter email*" />
+              <ErrorMessage name="email" component="div" />
+            </label>
           </Label>
         </div>
         <button type="submit">Submit</button>
