@@ -7,6 +7,7 @@ import {
   LogoLink,
   NameFirst,
   NameSecond,
+  NavItem,
 } from "./Header.styled";
 import Logo from "../../images/logo.svg";
 import { NavLink } from "../../utils/NavLink/NavLink";
@@ -68,21 +69,21 @@ export const Header = () => {
 
         <HeaderNav>
           <List>
-            <li>
+            <NavItem>
               <NavLink link="#home">Home</NavLink>
-            </li>
-            <li>
+            </NavItem>
+            <NavItem>
               <NavLink link="#about">About</NavLink>
-            </li>
-            <li>
+            </NavItem>
+            <NavItem>
               <NavLink link="#cases">Cases</NavLink>
-            </li>
-            <li>
+            </NavItem>
+            <NavItem>
               <NavLink link="#blog">Blog</NavLink>
-            </li>
-            <li>
+            </NavItem>
+            <NavItem>
               <NavLink link="#contact">Contact</NavLink>
-            </li>
+            </NavItem>
           </List>
         </HeaderNav>
       </ContainerHeader>

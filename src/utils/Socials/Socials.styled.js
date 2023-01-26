@@ -12,6 +12,12 @@ export const SocialItem = styled.li`
   :not(:last-child) {
     margin-right: 25px;
   }
+
+  @media screen and (min-width: 768px) {
+    :not(:last-child) {
+      margin-right: 15px;
+    }
+  } ;
 `;
 
 export const SocialLink = styled.div`

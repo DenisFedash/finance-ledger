@@ -13,6 +13,17 @@ export const TeamText = styled.p`
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+  :not(:last-child) {
+    margin-bottom: 16px;
+  }
+  :last-child {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 33px;
+  } ;
 `;
 
 export const TeamTitle = styled.h2`
@@ -27,12 +38,36 @@ export const TeamTitle = styled.h2`
   max-width: 219px;
   display: block;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 54px;
+    max-width: 427px;
+  } ;
+`;
+
+export const TeamList = styled.ul`
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 17px;
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (min-width: 1360px) {
+    grid-column-gap: 19px;
+  }
 `;
 
 export const TeamItem = styled.li`
   position: relative;
   :not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    height: fit-content;
   }
 `;
 
@@ -50,6 +85,17 @@ export const TeamImg = styled.div`
   &:focus {
     transform: scale(1.05);
     box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 223px;
+    height: 148px;
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 424px;
+    height: 284px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -86,6 +132,15 @@ export const TeamListSocial = styled.div`
   padding-right: 30px;
   &:hover {
     opacity: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media screen and (min-width: 1360px) {
+    padding-left: 103px;
+    padding-right: 103px;
   }
 `;
 

@@ -2,14 +2,32 @@ import styled from "styled-components";
 
 export const BlogContainer = styled.div`
   background-color: var(--second-accent-color);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+  } ;
 `;
 
 export const BlogImage = styled.div`
   padding-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    height: 493px;
+    width: 368px;
+    padding: 0;
+    img {
+      width: 368px;
+      height: 493px;
+    }
+  } ;
 `;
 
 export const BlogTextContainer = styled.div`
   padding: 0 20px 58px 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 59px 32px;
+  } ;
 `;
 
 export const BlogButton = styled.button`

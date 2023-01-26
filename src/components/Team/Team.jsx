@@ -17,6 +17,7 @@ import {
   TeamContainer,
   TeamImg,
   TeamItem,
+  TeamList,
   TeamListSocial,
   TeamName,
   TeamPosition,
@@ -29,13 +30,15 @@ export const Team = () => {
   return (
     <Container>
       <TeamContainer>
-        <TeamText>Who we are</TeamText>
-        <TeamTitle>Our Professional Team</TeamTitle>
-        <TeamText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-          sapiente!
-        </TeamText>
-        <ul>
+        <div>
+          <TeamText>Who we are</TeamText>
+          <TeamTitle>Our Professional Team</TeamTitle>
+          <TeamText>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sapiente!
+          </TeamText>
+        </div>
+        <TeamList>
           <TeamItem>
             <TeamImg>
               <TeamListSocial>
@@ -87,7 +90,7 @@ export const Team = () => {
             <TeamName>Steve Smith</TeamName>
             <TeamPosition>Marketing Head</TeamPosition>
           </TeamItem>
-        </ul>
+        </TeamList>
       </TeamContainer>
     </Container>
   );

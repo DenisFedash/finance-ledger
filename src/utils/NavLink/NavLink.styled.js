@@ -20,4 +20,10 @@ export const Link = styled.a`
       transform: translate(-18%);
     }
   }
+
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  } ;
 `;

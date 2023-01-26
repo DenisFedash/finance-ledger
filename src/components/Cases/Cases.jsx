@@ -1,5 +1,11 @@
 import { Container } from "../Container/Container.styled";
-import { CasesContainer, CasesText, CasesTitle, Image } from "./Cases.styled";
+import {
+  CasesContainer,
+  CasesList,
+  CasesText,
+  CasesTitle,
+  Image,
+} from "./Cases.styled";
 import cases1Jpg from "../../images/cases/cases1.jpg";
 import cases1Webp from "../../images/cases/cases1.webp";
 import cases1Jpg2x from "../../images/cases/cases1@2x.jpg";
@@ -24,27 +30,22 @@ import cases6Jpg from "../../images/cases/cases6.jpg";
 import cases6Webp from "../../images/cases/cases6.webp";
 import cases6Jpg2x from "../../images/cases/cases6@2x.jpg";
 import cases6Webp2x from "../../images/cases/cases6@2x.webp";
-import cases7Jpg from "../../images/cases/cases7.jpg";
-import cases7Webp from "../../images/cases/cases7.webp";
-import cases7Jpg2x from "../../images/cases/cases7@2x.jpg";
-import cases7Webp2x from "../../images/cases/cases7@2x.webp";
-import cases8Jpg from "../../images/cases/cases8.jpg";
-import cases8Webp from "../../images/cases/cases8.webp";
-import cases8Jpg2x from "../../images/cases/cases8@2x.jpg";
-import cases8Webp2x from "../../images/cases/cases8@2x.webp";
+
 import { Picture } from "../../utils/Picture/Picture";
 
 export const Cases = () => {
   return (
     <Container>
       <CasesContainer id="cases">
-        <CasesText>This is what we do</CasesText>
-        <CasesTitle>Business Cases</CasesTitle>
-        <CasesText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-          sapiente!
-        </CasesText>
-        <ul>
+        <div>
+          <CasesText>This is what we do</CasesText>
+          <CasesTitle>Business Cases</CasesTitle>
+          <CasesText>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sapiente!
+          </CasesText>
+        </div>
+        <CasesList>
           <Image>
             <a href={cases1Jpg2x} data-lightbox="roadtrip">
               <Picture
@@ -105,27 +106,7 @@ export const Cases = () => {
               />
             </a>
           </Image>
-          <Image>
-            <a href={cases7Jpg2x} data-lightbox="roadtrip">
-              <Picture
-                jpg1x={cases7Jpg}
-                jpg2x={cases7Webp}
-                webp1x={cases7Jpg2x}
-                webp2x={cases7Webp2x}
-              />
-            </a>
-          </Image>
-          <Image>
-            <a href={cases8Jpg2x} data-lightbox="roadtrip">
-              <Picture
-                jpg1x={cases8Jpg}
-                jpg2x={cases8Webp}
-                webp1x={cases8Jpg2x}
-                webp2x={cases8Webp2x}
-              />
-            </a>
-          </Image>
-        </ul>
+        </CasesList>
       </CasesContainer>
     </Container>
   );

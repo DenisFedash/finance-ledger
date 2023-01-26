@@ -8,14 +8,19 @@ export const FormContainer = styled(Form)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    align-items: start;
+  }
 `;
 
 export const Label = styled.div`
   :not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
   :last-child {
-    margin-bottom: 24px;
+    margin-bottom: 36px;
   }
 `;
 
@@ -33,14 +38,36 @@ export const FormField = styled(Field)`
     line-height: 23px;
     color: var(--fourth-accent-color);
   }
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
 `;
 
 export const Error = styled(ErrorMessage)`
   background-image: url(${warning});
   background-repeat: no-repeat;
-  background-position: 17%;
+  background-position: 1%;
+  background-position-x: left;
 
   text-align: center;
+  color: tomato;
+  position: absolute;
+  top: 55%;
+  right: 25%;
+`;
+
+export const ContactTitle = styled.h2`
+  color: var(--second-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 69px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
 `;
 
 export const ContactButton = styled.button`
@@ -64,5 +91,11 @@ export const ContactButton = styled.button`
   &:hover,
   &:focus {
     opacity: 0.8;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    align-items: start;
+    margin: 0;
   }
 `;

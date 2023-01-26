@@ -2,11 +2,13 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import {
   ContactButton,
+  ContactTitle,
   Error,
   FormContainer,
   FormField,
   Label,
 } from "./FormSubmit.styled";
+import warning from "../../images/worning.svg";
 
 const schema = yup.object().shape({
   name: yup.string().required("This is a required field"),
@@ -30,6 +32,7 @@ export const FormSubmit = () => {
       onSubmit={handleSubmit}
     >
       <FormContainer>
+        <ContactTitle>Request Callback</ContactTitle>
         <div>
           <Label>
             <label htmlFor="name">
@@ -38,7 +41,6 @@ export const FormSubmit = () => {
                 name="name"
                 placeholder="Enter your name"
               />
-              <Error name="name" component="div" />
             </label>
           </Label>
           <Label>

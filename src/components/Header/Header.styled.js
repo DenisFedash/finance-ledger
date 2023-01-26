@@ -8,6 +8,14 @@ export const ContainerHeader = styled.div`
   left: 50%;
   transform: translate(-50%);
   width: 320px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
 `;
 
 export const LogoLink = styled.a`
@@ -36,6 +44,12 @@ export const NameFirst = styled.h1`
 
   width: min-content;
   z-index: 5;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 48px;
+  } ;
 `;
 
 export const NameSecond = styled.span`
@@ -45,6 +59,12 @@ export const NameSecond = styled.span`
   font-size: 28px;
   line-height: 38px;
   margin-left: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 48px;
+  } ;
 `;
 
 export const HeaderNav = styled.nav`
@@ -55,6 +75,12 @@ export const List = styled.ul`
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+`;
+
+export const NavItem = styled.li`
+  :not(:last-child) {
+    margin-right: 20px;
+  }
 `;
 
 export const ImgLogo = styled.img`
