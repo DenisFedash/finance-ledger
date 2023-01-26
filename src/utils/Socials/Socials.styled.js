@@ -4,8 +4,6 @@ export const SocialList = styled.ul`
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  margin-bottom: 8px;
 `;
 
 export const SocialItem = styled.li`

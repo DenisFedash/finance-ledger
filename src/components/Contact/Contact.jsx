@@ -10,7 +10,7 @@ import { FormSubmit } from "../../utils/FormSubmit/FormSubmit";
 export const Contact = () => {
   return (
     <Container>
-      <ContactContainer>
+      <ContactContainer id="contact">
         <ContactImg>
           <Picture
             jpg1x={contactJpg}

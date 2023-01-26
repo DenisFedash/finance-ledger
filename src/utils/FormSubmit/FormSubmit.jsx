@@ -1,6 +1,12 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik } from "formik";
 import * as yup from "yup";
-import { FormContainer, FormField, Label } from "./FormSubmit.styled";
+import {
+  ContactButton,
+  Error,
+  FormContainer,
+  FormField,
+  Label,
+} from "./FormSubmit.styled";
 
 const schema = yup.object().shape({
   name: yup.string().required("This is a required field"),
@@ -32,17 +38,17 @@ export const FormSubmit = () => {
                 name="name"
                 placeholder="Enter your name"
               />
-              <ErrorMessage name="name" component="div" />
+              <Error name="name" component="div" />
             </label>
           </Label>
           <Label>
             <label htmlFor="email">
               <FormField type="text" name="Email" placeholder="Enter email*" />
-              <ErrorMessage name="email" component="div" />
+              <Error name="email" component="div" />
             </label>
           </Label>
         </div>
-        <button type="submit">Submit</button>
+        <ContactButton type="submit">Submit</ContactButton>
       </FormContainer>
     </Formik>
   );

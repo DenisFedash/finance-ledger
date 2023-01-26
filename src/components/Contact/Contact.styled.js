@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ContactContainer = styled.div`
   padding: 50px 20px 0 20px;
   background: var(--secondary-background-color);
+  padding-bottom: 25px;
 `;
 
 export const ContactImg = styled.div`

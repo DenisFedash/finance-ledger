@@ -3,7 +3,6 @@ import {
   HeaderBackground,
   HeaderNav,
   ImgLogo,
-  Link,
   List,
   LogoLink,
   NameFirst,

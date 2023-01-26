@@ -4,7 +4,6 @@ import {
   SocialLink,
   SocialList,
   SocialSvg,
-  YouTubeSvg,
 } from "./Socials.styled";
 
 export const Socials = () => {
@@ -12,11 +11,9 @@ export const Socials = () => {
     <SocialList>
       <SocialItem>
         <SocialLink>
-          <svg>
-            <SocialSvg width="35" height="35">
-              <use href={`${sprite}#facebook`}></use>
-            </SocialSvg>
-          </svg>
+          <SocialSvg width="35" height="35">
+            <use href={`${sprite}#facebook`}></use>
+          </SocialSvg>
         </SocialLink>
       </SocialItem>
       <SocialItem>
