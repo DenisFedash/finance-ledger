@@ -54,6 +54,10 @@ export const HeroTitle = styled.h2`
 
     max-width: 523px;
   }
+
+  @media screen and (min-width: 1360px) {
+    line-height: 75px;
+  }
 `;
 
 export const HeroText = styled.p`
@@ -71,9 +75,12 @@ export const HeroText = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 40px;
     line-height: 48px;
-
     max-width: 523px;
-  } ;
+  }
+  @media screen and (min-width: 1360px) {
+    line-height: 54px;
+    max-width: 798px;
+  }
 `;
 
 export const HeroButton = styled.button`

@@ -13,6 +13,10 @@ export const TextContainer = styled.div`
 
   @media screen and (min-width: 768px) {
     padding: 62px 32px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding: 80px 28px 86px 20px;
   } ;
 `;
 
@@ -28,6 +32,16 @@ export const AboutImg = styled.div`
     img {
       width: 368px;
       height: 589px;
+    }
+  }
+
+  @media screen and (min-width: 1360px) {
+    height: 460px;
+    width: 670px;
+    padding: 0;
+    img {
+      width: 670px;
+      height: 460px;
     }
   } ;
 `;

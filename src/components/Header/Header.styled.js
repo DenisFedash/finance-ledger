@@ -16,6 +16,9 @@ export const ContainerHeader = styled.div`
     align-items: center;
     padding: 16px 0;
   }
+  @media screen and (min-width: 1360px) {
+    width: 1360px;
+  } ;
 `;
 
 export const LogoLink = styled.a`
@@ -31,6 +34,14 @@ export const LogoLink = styled.a`
   &:focus {
     transform: scale(1.05);
     filter: brightness(1.2);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 0 0 32px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding: 0 0 0 28px;
   }
 `;
 
@@ -75,11 +86,25 @@ export const List = styled.ul`
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 32px 0 0;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding: 0 28px 0 0;
+  }
 `;
 
 export const NavItem = styled.li`
   :not(:last-child) {
     margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    :not(:last-child) {
+      margin-right: 40px;
+    }
   }
 `;
 

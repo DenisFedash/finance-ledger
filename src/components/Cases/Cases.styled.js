@@ -1,11 +1,18 @@
 import styled from "styled-components";
 
 export const CasesContainer = styled.div`
-  padding: 56px 20px 0 20px;
+  padding: 56px 20px 40px 20px;
   background: var(--secondary-background-color);
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding: 48px 32px 40px 32px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding: 48px 28px 70px 28px;
+  } ;
 `;
 
 export const CasesText = styled.p`
@@ -58,12 +65,12 @@ export const CasesList = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 148px;
-    grid-column-gap: 18px;
+    grid-column-gap: 17px;
     grid-row-gap: 18px;
   }
   @media screen and (min-width: 1360px) {
     grid-auto-rows: 282px;
-    grid-column-gap: 20px;
+    /* grid-column-gap: 20px; */
     grid-row-gap: 24px;
   }
 `;

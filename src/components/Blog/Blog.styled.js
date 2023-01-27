@@ -19,6 +19,16 @@ export const BlogImage = styled.div`
       width: 368px;
       height: 493px;
     }
+  }
+
+  @media screen and (min-width: 1360px) {
+    height: 460px;
+    width: 670px;
+    padding: 0;
+    img {
+      width: 670px;
+      height: 460px;
+    }
   } ;
 `;
 
@@ -27,6 +37,10 @@ export const BlogTextContainer = styled.div`
 
   @media screen and (min-width: 768px) {
     padding: 59px 32px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding: 80px 20px 80px 28px;
   } ;
 `;
 

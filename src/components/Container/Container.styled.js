@@ -9,4 +9,8 @@ export const Container = styled.div`
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+
+  @media screen and (min-width: 1360px) {
+    width: 1360px;
+  }
 `;

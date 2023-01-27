@@ -5,8 +5,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterSocials = styled.div`
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
