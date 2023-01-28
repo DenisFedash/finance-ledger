@@ -7,7 +7,6 @@ export const ContainerHeader = styled.div`
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  width: 320px;
 
   @media screen and (min-width: 768px) {
     width: 768px;
