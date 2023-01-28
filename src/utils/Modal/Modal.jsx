@@ -1,11 +1,4 @@
-import { useEffect, useCallback } from "react";
-import {
-  BackLink,
-  ModalContent,
-  ModalTitle,
-  ModalWindow,
-} from "./Modal.styled";
-import angleRight from "../../images/angle-right.svg";
+import { ArrowBack, BackLink, ModalTitle } from "./Modal.styled";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 
@@ -38,9 +31,7 @@ export const BasicModal = ({ open, handleClose }) => {
           <ModalTitle>Thank you!</ModalTitle>
           <p>Your form submission has been received.</p>
           <BackLink offset="200" href="#home" onClick={handleClose}>
-            <svg width="10" height="10" fill="#28a745">
-              <use href={angleRight}></use>
-            </svg>
+            <ArrowBack />
             Back to our site
           </BackLink>
         </Box>

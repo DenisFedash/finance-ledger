@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import { Field, Form } from "formik";
-import { ErrorMessage } from "formik";
-import warning from "../../images/worning.svg";
 
 export const FormContainer = styled(Form)`
   display: flex;
@@ -83,29 +81,6 @@ export const Error = styled.p`
   font-size: 14px;
   line-height: 16px;
   color: #f0000f;
-  /* background-image: url(${warning});
-  background-repeat: no-repeat;
-  background-position: 1%;
-  background-position: left;
-  text-indent: 10px;
-  padding-left: 10px;
-
-  text-align: center;
-  color: tomato;
-  position: absolute;
-
-  top: 83%;
-  right: 37%;
-
-  @media screen and (min-width: 768px) {
-    top: 60%;
-    right: 24%;
-  }
-
-  @media screen and (min-width: 1360px) {
-    top: 53%;
-    right: 34%;
-  } */
 `;
 
 export const ContactTitle = styled.h2`

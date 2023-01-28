@@ -1,5 +1,6 @@
 import { ErrorMessage, Formik } from "formik";
 import * as yup from "yup";
+import { IoIosWarning } from "react-icons/io";
 import {
   ContactButton,
   ContactTitle,
@@ -11,7 +12,6 @@ import {
 } from "./FormSubmit.styled";
 import { BasicModal } from "../../utils/Modal/Modal";
 import { useState } from "react";
-import warning from "../../images/worning.svg";
 
 const schema = yup.object().shape({
   name: yup.string(),
@@ -45,12 +45,7 @@ export const FormSubmit = () => {
       <Formik
         initialValues={initialValues}
         validationSchema={schema}
-        onSubmit={(values) => {
-          console.log(values);
-          handleOpen();
-          setNameValue("");
-          setMailValue("");
-        }}
+        onSubmit={handleSubmit}
       >
         {({ setFieldValue }) => {
           return (
@@ -90,9 +85,7 @@ export const FormSubmit = () => {
                   name="email"
                   render={(msg) => (
                     <Error>
-                      <svg width="14" height="14" fill="#f0000f">
-                        <use href=""></use>
-                      </svg>
+                      <IoIosWarning />
                       {msg}
                     </Error>
                   )}

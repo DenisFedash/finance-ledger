@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { BsArrowReturnLeft } from "react-icons/bs";
 
 export const ModalWindow = styled.div`
   height: 100vh;
@@ -25,11 +26,6 @@ export const ModalTitle = styled.p`
 `;
 
 export const ModalContent = styled.div`
-  /* padding: 20px;
-  border-radius: 5px;
-  background-color: var(--secondary-background-color);
-  width: 400px;
-  height: 200px; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,6 +44,19 @@ export const BackLink = styled(AnchorLink)`
   text-decoration: none;
   &:hover,
   &:focus {
-    color: var(--first-color);
+    color: var(--second-color);
+    fill: var(--second-color);
+  }
+`;
+
+export const ArrowBack = styled(BsArrowReturnLeft)`
+  vertical-align: middle;
+  margin-right: 5px;
+  align-items: center;
+  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--second-color);
+    fill: var(--second-color);
   }
 `;

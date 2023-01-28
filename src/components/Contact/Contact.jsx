@@ -7,7 +7,6 @@ import contact2xWebp from "../../images/home/contact@2x.webp";
 import {
   ContactContainer,
   ContactImg,
-  ContactTitle,
   RequestContainer,
 } from "./Contact.styled";
 import { FormSubmit } from "../../utils/FormSubmit/FormSubmit";
