@@ -13,7 +13,7 @@ import Angle from "../../images/angle-right.svg";
 export const Hero = () => {
   return (
     <Container>
-      <ContainerHero>
+      <ContainerHero id="home">
         <SectionHero>
           <HeroTitle>The Sky Is The Limit</HeroTitle>
           <HeroText>We provide world class financial assistance</HeroText>

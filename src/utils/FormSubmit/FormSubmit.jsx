@@ -7,10 +7,9 @@ import {
   FormContainer,
   Input,
   InputContainer,
-  Label,
   LabelStyled,
 } from "./FormSubmit.styled";
-import { Modal } from "../../utils/Modal/Modal";
+import { BasicModal } from "../../utils/Modal/Modal";
 import { useState } from "react";
 import warning from "../../images/worning.svg";
 
@@ -105,7 +104,7 @@ export const FormSubmit = () => {
           );
         }}
       </Formik>
-      <Modal open={open} handleClose={handleClose} />
+      <BasicModal open={open} handleClose={handleClose} />
     </>
   );
 };
